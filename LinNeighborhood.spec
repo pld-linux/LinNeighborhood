@@ -1,7 +1,7 @@
 Summary:	GUI for a Network Neighborhood in LINUX
 Summary(pl):	GUI dla Otoczenia Sieciowego (SMB) w Linuksie
 Name:		LinNeighborhood
-Version:	0.6.4
+Version:	0.6.5
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
