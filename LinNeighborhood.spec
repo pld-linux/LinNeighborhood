@@ -8,6 +8,7 @@ Group:		X11/Applications/Networking
 Source0:	http://www.bnro.de/~schmidjo/download/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
+Patch0:		%{name}-po.patch
 URL:		http://www.bnro.de/~schmidjo/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	gettext-devel
@@ -30,6 +31,7 @@ montowanie udostêpnianych zasobów.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f missing
