@@ -10,4 +10,5 @@ Type=Application
 SwallowExec=
 SwallowTitle=
 Encoding=UTF-8
+Categories=Network;
 # vi: encoding=utf-8
