@@ -3,7 +3,7 @@ Summary(pl):	GUI dla Otoczenia Sieciowego (SMB) w Linuksie
 Summary(pt_BR):	Interface gráfica para a vizinhança da rede
 Name:		LinNeighborhood
 Version:	0.6.5
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.bnro.de/~schmidjo/download/%{name}-%{version}.tar.gz
@@ -12,10 +12,10 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-po.patch
 URL:		http://www.bnro.de/~schmidjo/
-BuildRequires:	gtk+-devel >= 1.2.0
-BuildRequires:	gettext-devel
-BuildRequires:	automake
 BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gettext-devel
+BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libtool
 Requires:	samba-client
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -59,7 +59,6 @@ install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
-
 
 %find_lang %{name}
 
