@@ -1,8 +1,8 @@
 Summary:	GUI for a Network Neighborhood in LINUX
 Summary(pl):	GUI dla S±siedztwa Sieciowego (SMB) w Linuksie
 Name:		LinNeighborhood
-Version:	0.6.2
-Release:	2
+Version:	0.6.3
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
@@ -14,6 +14,7 @@ BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	gettext-devel
 BuildRequires:	automake
 BuildRequires:	autoconf
+BuildRequires:	libtool
 Requires:	samba-client >= 2.2.0
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,6 +35,7 @@ montowanie udostêpnianych zasobów.
 
 %build
 rm missing
+libtoolize --copy --force
 gettextize --copy --force
 aclocal
 autoconf
