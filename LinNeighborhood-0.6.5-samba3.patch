@@ -1,0 +1,74 @@
+diff -Naur LinNeighborhood-0.6.5.orig/src/smbmount.c LinNeighborhood-0.6.5/src/smbmount.c
+--- LinNeighborhood-0.6.5.orig/src/smbmount.c	Sun Jun  9 09:58:43 2002
++++ LinNeighborhood-0.6.5/src/smbmount.c	Fri Aug 13 15:02:25 2004
+@@ -390,10 +390,16 @@
+          escape_str(smbuser,&strlist),escape_str(smbpasswd,&strlist));
+         break;
+        case SMBMOUNT_206:
+-        sprintf(commandstr,"%s %s %s -o username=%s%%%s,fmask=%d,dmask=%d,uid=%d,gid=%d,ip=%s,debug=0%s",
++        sprintf(commandstr,"%s %s %s -o username=%s%%%s,fmask=%d,dmask=%d,uid=%d,gid=%d,debug=0%s",
+          escape_str(pref_get_smbmount_exe(),&strlist),escape_str(servicename,&strlist),escape_str(mount_point,&strlist),
+          escape_str(smbuser,&strlist),escape_str(smbpasswd,&strlist),
+-         filemode,dirmode,uid,gid,ipaddr,opt_group);
++         filemode,dirmode,uid,gid,opt_group);
++
++	if (ipaddr && *ipaddr) {
++		string_ncat(commandstr, ",ip=", MAXMNTCOMMANDL);
++		string_ncat(commandstr, ipaddr, MAXMNTCOMMANDL);
++		}
++
+          if ( (port >= 0) && (port < 65536) )
+          {
+           sprintf(commandstr, "%s,port=%d", commandstr, port);
+@@ -485,8 +491,14 @@
+       {
+         argv[++argnr]="-o";
+         argv[++argnr]=commandstr;
+-        sprintf(commandstr,"username=%s%%%s,fmask=%d,dmask=%d,uid=%d,gid=%d,ip=%s,debug=0",
+-           smbuser,smbpasswd,filemode,dirmode,uid,gid,ipaddr);
++        sprintf(commandstr,"username=%s%%%s,fmask=%d,dmask=%d,uid=%d,gid=%d,debug=0",
++           smbuser,smbpasswd,filemode,dirmode,uid,gid);
++
++	if (ipaddr && *ipaddr) {
++		string_ncat(commandstr, ",ip=", MAXMNTCOMMANDL);
++		string_ncat(commandstr, ipaddr, MAXMNTCOMMANDL);
++		}
++
+         if (*group_name)
+         {
+           strcat(commandstr,",workgroup=");
+@@ -573,9 +585,15 @@
+           pref_get_smbmount_exe(),servicename,mount_point,ipaddr,opt_group,smbuser,dummysmbpasswd);
+         break;
+       case SMBMOUNT_206:
+-        sprintf(commandstr,"%s %s %s -o username=%s%%%s,fmask=%d,dmask=%d,uid=%d,gid=%d,ip=%s,debug=0%s",
++        sprintf(commandstr,"%s %s %s -o username=%s%%%s,fmask=%d,dmask=%d,uid=%d,gid=%d,debug=0%s",
+          pref_get_smbmount_exe(),servicename,mount_point,smbuser,dummysmbpasswd,
+-         filemode,dirmode,uid,gid,ipaddr,opt_group);
++         filemode,dirmode,uid,gid,opt_group);
++
++	if (ipaddr && *ipaddr) {
++		string_ncat(commandstr, ",ip=", MAXMNTCOMMANDL);
++		string_ncat(commandstr, ipaddr, MAXMNTCOMMANDL);
++		}
++
+         if ( (port >= 0) && (port < 65536) )
+         {
+           string_ncat(commandstr, ",port=", MAXMNTCOMMANDL);
+@@ -621,8 +639,14 @@
+         sprintf(userpasswd,"-U%s%%%s",smbuser,dummysmbpasswd);
+       else
+       {
+-       sprintf(commandstr,"username=%s%%%s,fmask=%d,dmask=%d,uid=%d,gid=%d,ip=%s,debug=0",
+-          smbuser,dummysmbpasswd,filemode,dirmode,uid,gid,ipaddr);
++       sprintf(commandstr,"username=%s%%%s,fmask=%d,dmask=%d,uid=%d,gid=%d,debug=0",
++          smbuser,dummysmbpasswd,filemode,dirmode,uid,gid);
++
++	if (ipaddr && *ipaddr) {
++		string_ncat(commandstr, ",ip=", MAXMNTCOMMANDL);
++		string_ncat(commandstr, ipaddr, MAXMNTCOMMANDL);
++		}
++
+        if (*group_name){
+          strcat(commandstr,",workgroup=");
+          strcat(commandstr,group_name);
