@@ -5,8 +5,6 @@ Version:	0.6.3
 Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
-Group(de):	X11/Applikationen/Netzwerkwesen
-Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://www.bnro.de/~schmidjo/download/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://www.bnro.de/~schmidjo/
