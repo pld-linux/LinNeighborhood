@@ -2,7 +2,7 @@ Summary:	GUI for a Network Neighborhood in LINUX
 Summary(pl):	GUI dla S±siedztwa Sieciowego (SMB) w Linuksie
 Name:		LinNeighborhood
 Version:	0.6.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
@@ -12,26 +12,32 @@ Source1:	%{name}.desktop
 URL:		http://www.bnro.de/~schmidjo/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	gettext-devel
-Requires:	samba
+BuildRequires:	automake
+BuildRequires:	autoconf
+Requires:	samba-client >= 2.2.0
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
 %description
-This application gives you a GUI similar to the Win9x/NT
-network neighborhood. It makes you able to browse entire
-networks and mount shares.
+This application gives you a GUI similar to the Win9x/NT network
+neighborhood. It makes you able to browse entire networks and mount
+shares.
 
 %description -l pl
-Ta aplikacja dostarcza Ci GUI podobnego do Otoczenia Sieciowego
-w Win9x/NT. Narzêdzie to pozwala na przegl±danie ca³ych sieci
-oraz montowanie udostêpnianych zasobów.
+Ta aplikacja dostarcza Ci GUI podobnego do Otoczenia Sieciowego w
+Win9x/NT. Narzêdzie to pozwala na przegl±danie ca³ych sieci oraz
+montowanie udostêpnianych zasobów.
 
 %prep
 %setup -q
 
 %build
+rm missing
 gettextize --copy --force
+aclocal
+autoconf
+automake -a -c
 %configure
 %{__make}
 
