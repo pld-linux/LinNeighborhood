@@ -3,7 +3,7 @@ Summary(pl):	GUI dla Otoczenia Sieciowego (SMB) w Linuksie
 Summary(pt_BR):	Interface gráfica para a vizinhança da rede
 Name:		LinNeighborhood
 Version:	0.6.5
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.bnro.de/~schmidjo/download/%{name}-%{version}.tar.gz
@@ -52,12 +52,12 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Misc,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 
@@ -71,4 +71,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS BUGS CONFIGURATION README THANKS TODO ChangeLog
 %attr(755,root,root) %{_bindir}/%{name}
 %{_pixmapsdir}/*
-%{_applnkdir}/Network/Misc/*
+%{_desktopdir}/*
