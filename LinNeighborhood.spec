@@ -15,7 +15,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	automake
 BuildRequires:	autoconf
 BuildRequires:	libtool
-Requires:	samba-client >= 2.2.0
+Requires:	samba-client 
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -53,7 +53,7 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Misc,%{_pixmapsdir}}
 install LinNeighborhood.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
 
-gzip -9nf AUTHORS BUGS CONFIGURATION NEWS README THANKS TODO
+gzip -9nf AUTHORS BUGS CONFIGURATION README THANKS TODO ChangeLog
 
 %find_lang %{name}
 
