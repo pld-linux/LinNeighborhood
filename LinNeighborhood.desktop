@@ -1,10 +1,11 @@
 [Desktop Entry]
 Name=LinNeighborhood
 Comment=Samba Network Neighborhood
-Comment[fr]=Voisinage Réseau Samba
+Comment[fr]=Voisinage RÃ©seau Samba
 Exec=LinNeighborhood
 Icon=LinNeighborhood.xpm
 Terminal=0
 Type=Application
 SwallowExec=
 SwallowTitle=
+# vi: encoding=utf-8
