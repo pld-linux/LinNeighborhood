@@ -3,7 +3,7 @@ Summary(pl):	GUI dla Otoczenia Sieciowego (SMB) w Linuksie
 Summary(pt_BR):	Interface gráfica para a vizinhança da rede
 Name:		LinNeighborhood
 Version:	0.6.5
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.bnro.de/~schmidjo/download/%{name}-%{version}.tar.gz
@@ -11,6 +11,8 @@ Source0:	http://www.bnro.de/~schmidjo/download/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-po.patch
+#bugfix for samba 3 mount problem ('can't resolve address'):
+Patch1:		http://www.bnro.de/~schmidjo/download/LinNeighborhood-0.6.5-samba3.patch
 URL:		http://www.bnro.de/~schmidjo/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -39,6 +41,7 @@ compartilhados.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 rm -f missing
