@@ -52,7 +52,6 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Misc,%{_pixmapsdir}}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
-gzip -9nf AUTHORS BUGS CONFIGURATION README THANKS TODO ChangeLog
 
 %find_lang %{name}
 
@@ -61,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS BUGS CONFIGURATION README THANKS TODO ChangeLog
 %attr(755,root,root) %{_bindir}/%{name}
 %{_pixmapsdir}/*
 %{_applnkdir}/Network/Misc/*
