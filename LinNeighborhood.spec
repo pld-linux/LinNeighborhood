@@ -36,7 +36,7 @@ montowanie udostêpnianych zasobów.
 rm -f missing
 %{__libtoolize}
 %{__gettextize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
