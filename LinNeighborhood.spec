@@ -34,7 +34,7 @@ montowanie udostêpnianych zasobów.
 
 %build
 rm -f missing
-libtoolize --copy --force
+%{__libtoolize}
 gettextize --copy --force
 aclocal
 %{__autoconf}
