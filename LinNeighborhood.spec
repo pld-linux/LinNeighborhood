@@ -45,7 +45,7 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Applications,%{_datadir}/pixmaps}
 	DESTDIR=$RPM_BUILD_ROOT
 
 install LinNeighborhood.xpm	$RPM_BUILD_ROOT%{_datadir}/pixmaps
-install linneighborhood.desktop $RPM_BUILD_ROOT%{_applnkdir}/Applications
+install linneighborhood.desktop $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
 
 gzip -9nf AUTHORS BUGS CONFIGURATION NEWS README THANKS TODO
 
@@ -59,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/%{name}
 %{_datadir}/pixmaps/LinNeighborhood.xpm
-%{_applnkdir}/Applications/linneighborhood.desktop
+%{_applnkdir}/Network/Misc/linneighborhood.desktop
