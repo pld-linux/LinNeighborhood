@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.bnro.de/~schmidjo/download/%{name}-%{version}.tar.gz
+# Source0-md5:	5e50c9cef403164aca22be9ade0a7dbf
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-po.patch
