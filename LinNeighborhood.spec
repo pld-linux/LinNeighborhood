@@ -17,7 +17,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	automake
 BuildRequires:	autoconf
 BuildRequires:	libtool
-Requires:	samba-client 
+Requires:	samba-client
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
