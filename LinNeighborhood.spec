@@ -18,7 +18,7 @@ BuildRequires:	automake
 BuildRequires:	autoconf
 BuildRequires:	libtool
 Requires:	samba-client
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
 %description
