@@ -2,6 +2,7 @@
 Name=LinNeighborhood
 Comment=Samba Network Neighborhood
 Comment[fr]=Voisinage Réseau Samba
+Comment[pl]=Otoczenie sieciowe Samby
 Exec=LinNeighborhood
 Icon=LinNeighborhood.xpm
 Terminal=0
