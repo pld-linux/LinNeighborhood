@@ -9,4 +9,5 @@ Terminal=0
 Type=Application
 SwallowExec=
 SwallowTitle=
+Encoding=UTF-8
 # vi: encoding=utf-8
