@@ -1,0 +1,95 @@
+--- LinNeighborhood-0.6.5/po/fr.po.orig	Fri May  9 09:30:18 2003
++++ LinNeighborhood-0.6.5/po/fr.po	Fri May  9 09:31:13 2003
+@@ -6,12 +6,12 @@
+ msgstr ""
+ "Project-Id-Version: LinNeighborhood 0.6.5\n"
+ "POT-Creation-Date: 2001-12-15 18:39-0100\n"
+-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
++"PO-Revision-Date: 2001-12-15 18:39-0100\n"
+ "Last-Translator: Jean-Matthieu Schaffhauser <jms@supinfo.com>\n"
+ "Language-Team: French <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=ISO-8859-1\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: src/gtk_dialog.c:140
+ msgid " Insert User"
+@@ -509,8 +509,8 @@
+ 
+ #. -- File menu --
+ #: src/gtk_gui.c:565 src/gtk_sharewindow.c:759
+-msgid "File"
+-msgstr "Fichier"
++#msgid "File"
++#msgstr "Fichier"
+ 
+ #: src/gtk_gui.c:571
+ msgid "Mount..."
+--- LinNeighborhood-0.6.5/po/pl.po.orig	Fri May  9 09:32:38 2003
++++ LinNeighborhood-0.6.5/po/pl.po	Fri May  9 09:33:02 2003
+@@ -8,7 +8,7 @@
+ "POT-Creation-Date: 2002-06-09 09:58+0200\n"
+ "PO-Revision-Date: 2002-05-20 14:00+0200\n"
+ "Last-Translator: Przemys³aw Su³ek <pbs@linux.net.pl>\n"
+-"Language-Team: LANGUAGE <LL@li.org>\n"
++"Language-Team: Przemys³aw Su³ek <pbs@linux.net.pl>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=ISO-8859-2\n"
+ "Content-Transfer-Encoding: 8bit\n"
+--- LinNeighborhood-0.6.5/po/ru.po.orig	Fri May  9 09:31:28 2003
++++ LinNeighborhood-0.6.5/po/ru.po	Fri May  9 09:32:29 2003
+@@ -11,7 +11,7 @@
+ "Language-Team: Russian <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=koi8-r\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: gtk_dialog.c:140
+ msgid " Insert User"
+--- LinNeighborhood-0.6.5/po/zh_TW.po.orig	Fri May  9 09:34:08 2003
++++ LinNeighborhood-0.6.5/po/zh_TW.po	Fri May  9 09:34:51 2003
+@@ -11,7 +11,7 @@
+ "Language-Team:Chinese2000 Linux\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=Big5\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: gtk_dialog.c:140
+ msgid " Insert User"
+--- LinNeighborhood-0.6.5/po/de.po.orig	Sun Jun  9 07:58:43 2002
++++ LinNeighborhood-0.6.5/po/de.po	Fri May  9 09:40:54 2003
+@@ -6,12 +6,12 @@
+ msgstr ""
+ "Project-Id-Version: LinNeighborhood 0.6.5\n"
+ "POT-Creation-Date: 2002-05-20 09:51+0200\n"
+-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
++"PO-Revision-Date: 2002-05-20 09:51+0200\n"
+ "Last-Translator: Hans Schmid <schmidjo@bnro.de>\n"
+ "Language-Team: German <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=ISO-8859-1\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: gtk_dialog.c:140
+ msgid " Insert User"
+--- LinNeighborhood-0.6.5/po/sv.po.orig	Sun Jun  9 07:58:43 2002
++++ LinNeighborhood-0.6.5/po/sv.po	Fri May  9 09:41:24 2003
+@@ -6,12 +6,12 @@
+ msgstr ""
+ "Project-Id-Version: LinNeighborhood 0.6.5\n"
+ "POT-Creation-Date: 2001-12-15 18:39-0100\n"
+-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
++"PO-Revision-Date: 2001-12-15 18:39-0100\n"
+ "Last-Translator: Richard Torkar <ds98rito@thn.htu.se>\n"
+ "Language-Team: Swedish <LL@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=ISO-8859-1\n"
+-"Content-Transfer-Encoding: ENCODING\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ # gtk_dialog.c:107
+ # gtk_dialog.c:107
