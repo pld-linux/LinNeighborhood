@@ -17,7 +17,6 @@ BuildRequires:	libtool
 Requires:	samba-client 
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 This application gives you a GUI similar to the Win9x/NT network
