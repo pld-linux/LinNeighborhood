@@ -12,7 +12,8 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-po.patch
 #bugfix for samba 3 mount problem ('can't resolve address'):
-Patch1:		http://www.bnro.de/~schmidjo/download/LinNeighborhood-0.6.5-samba3.patch
+# http://www.bnro.de/~schmidjo/download/LinNeighborhood-0.6.5-samba3.patc
+Patch1:		%{name}-%{version}-samba3.patch
 URL:		http://www.bnro.de/~schmidjo/
 BuildRequires:	autoconf
 BuildRequires:	automake
