@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.bnro.de/~schmidjo/download/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+Source2:	%{name}.png
 URL:		http://www.bnro.de/~schmidjo/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	gettext-devel
@@ -32,7 +33,7 @@ montowanie udostêpnianych zasobów.
 %setup -q
 
 %build
-rm missing
+rm -f missing
 libtoolize --copy --force
 gettextize --copy --force
 aclocal
@@ -48,8 +49,8 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Misc,%{_pixmapsdir}}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install LinNeighborhood.xpm $RPM_BUILD_ROOT%{_pixmapsdir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Network/Misc
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 gzip -9nf AUTHORS BUGS CONFIGURATION README THANKS TODO ChangeLog
 
