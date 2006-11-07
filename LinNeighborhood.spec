@@ -74,4 +74,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS BUGS CONFIGURATION README THANKS TODO ChangeLog
 %attr(755,root,root) %{_bindir}/%{name}
 %{_pixmapsdir}/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
