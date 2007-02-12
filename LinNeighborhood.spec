@@ -1,6 +1,6 @@
 Summary:	GUI for a Network Neighborhood in LINUX
-Summary(pl):	GUI dla Otoczenia Sieciowego (SMB) w Linuksie
-Summary(pt_BR):	Interface gráfica para a vizinhança da rede
+Summary(pl.UTF-8):   GUI dla Otoczenia Sieciowego (SMB) w Linuksie
+Summary(pt_BR.UTF-8):   Interface grÃ¡fica para a vizinhanÃ§a da rede
 Name:		LinNeighborhood
 Version:	0.6.5
 Release:	5
@@ -29,14 +29,14 @@ This application gives you a GUI similar to the Win9x/NT network
 neighborhood. It makes you able to browse entire networks and mount
 shares.
 
-%description -l pl
+%description -l pl.UTF-8
 Ta aplikacja dostarcza Ci GUI podobnego do Otoczenia Sieciowego w
-Win9x/NT. Narzêdzie to pozwala na przegl±danie ca³ych sieci oraz
-montowanie udostêpnianych zasobów.
+Win9x/NT. NarzÄ™dzie to pozwala na przeglÄ…danie caÅ‚ych sieci oraz
+montowanie udostÄ™pnianych zasobÃ³w.
 
-%description -l pt_BR
-Esta aplicação fornece uma interface gráfica similar a vizinhança da rede
-no Win9x/NT (c). Permite a navegação em redes inteiras e montar volumes
+%description -l pt_BR.UTF-8
+Esta aplicaÃ§Ã£o fornece uma interface grÃ¡fica similar a vizinhanÃ§a da rede
+no Win9x/NT (c). Permite a navegaÃ§Ã£o em redes inteiras e montar volumes
 compartilhados.
 
 %prep
