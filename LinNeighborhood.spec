@@ -1,6 +1,6 @@
 Summary:	GUI for a Network Neighborhood in LINUX
-Summary(pl.UTF-8):   GUI dla Otoczenia Sieciowego (SMB) w Linuksie
-Summary(pt_BR.UTF-8):   Interface gráfica para a vizinhança da rede
+Summary(pl.UTF-8):	GUI dla Otoczenia Sieciowego (SMB) w Linuksie
+Summary(pt_BR.UTF-8):	Interface gráfica para a vizinhança da rede
 Name:		LinNeighborhood
 Version:	0.6.5
 Release:	5
