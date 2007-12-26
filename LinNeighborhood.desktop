@@ -7,7 +7,5 @@ Exec=LinNeighborhood
 Icon=LinNeighborhood
 Terminal=false
 Type=Application
-SwallowExec=
-SwallowTitle=
 Categories=GTK;Network;
 # vi: encoding=utf-8
