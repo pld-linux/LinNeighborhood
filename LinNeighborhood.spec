@@ -17,7 +17,7 @@ Patch1:		%{name}-%{version}-samba3.patch
 URL:		http://www.bnro.de/~schmidjo/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libtool
 Requires:	samba-client
